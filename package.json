@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "d3": "^3.0.0"
+  },
+  "name": "burst",
+  "version": "0.0.1",
+  "description": "A library for creating a radial burst chart",
+  "main": "burst.js",
+  "devDependencies": {
+    "rollup": "^0.26.0",
+    "uglify-js": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -e d3 -f umd -o burst.js -n burst lib/burst.js; uglifyjs -c -m -o burst.min.js burst.js"
+  },
+  "keywords": [
+    "d3",
+    "burst",
+    "chart",
+    "diagram",
+    "graph",
+    "radial"
+  ],
+  "author": "Nick Sandonato <nsandona@us.ibm.com>",
+  "license": "MIT"
+}
